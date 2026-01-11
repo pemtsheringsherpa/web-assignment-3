@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | My Portfolio</title>
     <link rel="stylesheet" href="contact.css">
 </head>
@@ -9,6 +10,15 @@
 
 <header>
     <h1>Contact Me</h1>
+
+    <!-- Hamburger -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,27 +31,21 @@
 </header>
 
 <main class="contact">
-    <p>Email: pemtsheringsherpa20251061@gmail.com</p>
-    <p>Phone: +977-XXXXXXXXX</p>
-
-    <form action="mailto: pemtsheringsherpa20251061@gmail.com" method="post" enctype="text/plain">
-        <label>Name</label>
-        <input type="text" name="name" required>
-
-        <label>Email</label>
-        <input type="email" name="email" required>
-
-        <label>Message</label>
-        <textarea name="message"></textarea>
-
-        <button type="submit">Send</button>
-    </form>
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </main>
 
 <footer>
-    <p>© 2026 pem tshering sherpa</p>
+    <p>© 2026 Pem Tshering Sherpa</p>
 </footer>
 
 </body>
 </html>
-
