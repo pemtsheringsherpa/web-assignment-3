@@ -1,66 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #eaeaea;
-}
-
-/* Header */
+/* Header & Hamburger */
 header {
     background-color: #222;
     color: white;
     padding: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 10;
 }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 0.8rem;
-    font-size: 1rem;
-    display: inline-block;
+#menu-toggle { display: none; }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20;
 }
-nav ul li a:hover,
-nav ul li a.active {
-    text-decoration: underline;
-} 
+.hamburger span { height: 3px; background: white; border-radius: 2px; }
+nav ul { list-style: none; display: flex; justify-content: center; gap: 1rem; }
+nav ul li a { color: white; text-decoration: none; padding: 0.5rem 0.8rem; display: inline-block; }
+nav ul li a:hover, nav ul li a.active { color: #ffdd57; text-decoration: underline; }
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    nav ul { flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: #333; max-height: 0; overflow: hidden; z-index: 1000; transition: max-height 0.5s ease; }
+    nav ul li { margin: 1rem 0; }
+    #menu-toggle:checked + .hamburger + nav ul { max-height: 500px; }
+}
 
 /* Project grid */
-.projects {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-} 
+.projects { padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 25px; }
+.project-card { background:white; display:flex; flex-direction:column; justify-content:center; align-items:center; font-weight:bold; border:2px solid #ccc; padding:20px; text-align:center; }
+.project-card img { max-width: 100%; border-radius: 5px; }
 
-.project-card {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    border: 2px solid #ccc;
-    padding: 20px;
-    text-align: center;
-    min-height: 220px;
-} 
-
-.project-card img {
-    height: 2em; 
-    width: auto;
-    max-width: 100%;
-    object-fit: cover;
-    margin-bottom: 12px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #010101;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
+/* Footer */
+footer { background-color:#010101; color:white; text-align:center; padding:15px; }
