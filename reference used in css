@@ -1,0 +1,19 @@
+reference used:
+W3Schools (2024) How TO – Mobile Navigation Menu. Available at: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+ (Accessed: 11 January 2026).
+ The following parts of the CSS were adapted from the W3Schools mobile navigation example:
+
+Lines defining #menu-toggle { display: none; }
+Used to hide the checkbox input that controls the hamburger menu toggle.
+
+Lines defining .hamburger and .hamburger span
+Used to visually create the hamburger icon consisting of three horizontal bars.
+
+Media query @media (max-width: 768px)
+Used to switch the navigation layout from horizontal to vertical for mobile devices.
+
+CSS selector #menu-toggle:checked + .hamburger + nav ul
+Used to expand the navigation menu by increasing max-height when the hamburger icon is clicked.
+
+These lines appear in the following files:
+index.css, project.css, sitereport.css, contact.css, and video.css, where the same navigation structure is reused for consistency across the website.
