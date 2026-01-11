@@ -41,6 +41,15 @@ nav ul li a.active {
     text-decoration: underline;
 } 
 
+.profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
 /* Home content */
 .home {
     min-height: 70vh;
@@ -63,4 +72,5 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
