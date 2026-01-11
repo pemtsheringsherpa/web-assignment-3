@@ -16,20 +16,7 @@ header {
     padding: 20px;
 }
 
-/* Unified Navigation */
-nav {
-    background-color: #333;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 0.6rem;
-    margin: 0;
-    flex-wrap: wrap;
-}
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 0.8rem;
@@ -63,7 +50,7 @@ nav ul li a.active {
 } 
 
 .project-card img {
-    height: 2em; /* about 2× the surrounding text size */
+    height: 2em; 
     width: auto;
     max-width: 100%;
     object-fit: cover;
