@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects | My Portfolio</title>
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
@@ -11,9 +11,11 @@
 <header>
     <h1>Projects</h1>
 
-    <!-- Hamburger -->
+    <!-- Hamburger menu -->
     <input type="checkbox" id="menu-toggle">
+
     <label for="menu-toggle" class="hamburger">
+        <span class="visually-hidden">Toggle navigation menu</span>
         <span></span>
         <span></span>
         <span></span>
@@ -31,28 +33,36 @@
 </header>
 
 <main class="projects">
-    <a href="timetable.html" class="project-card">
-        <img src="timetable.png" alt="website test ">
-        <h3>website example</h3>
-        <p>Header, Navigation, Main & Sidebar</p>
-    </a>
 
-    <a href="loginpage.html" class="project-card">
-        <img src="loginpage.png" alt="loginpage Layout Project">
-        <h3>Basic loginpage Layout</h3>
-        <p>name, age, email, phone number</p>
-    </a>
+    <h2>My Project Work</h2>
 
-    <a href="shadow.html" class="project-card">
-        <img src="shadow.png" alt="Simple Page Design">
-        <h3>Simple shadow Design</h3>
-        <p>various shadow practice</p>
-    </a>
+    <section class="project-grid">
+
+        <a href="timetable.html" class="project-card">
+            <img src="timetable.png" alt="Website layout example">
+            <h3>Website example</h3>
+            <p>Header, navigation, main content and sidebar layout</p>
+        </a>
+
+        <a href="loginpage.html" class="project-card">
+            <img src="loginpage.png" alt="Login page layout project">
+            <h3>Basic login page layout</h3>
+            <p>Name, age, email and phone number form</p>
+        </a>
+
+        <a href="shadow.html" class="project-card">
+            <img src="shadow.png" alt="Simple shadow design example">
+            <h3>Simple shadow design</h3>
+            <p>Various CSS box-shadow practices</p>
+        </a>
+
+    </section>
+
 </main>
 
 <footer>
     <p>© 2026 Pem Tshering Sherpa</p>
 </footer>
+
 </body>
 </html>
-
